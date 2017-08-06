@@ -56,19 +56,19 @@ var webpackConfig = merge(baseWebpackConfig, {
             template: 'index.html',
             inject: true,
             favicon: resolveApp('favicon.ico'),
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true,
-                removeRedundantAttributes: true,
-                useShortDoctype: true,
-                removeEmptyAttributes: true,
-                removeStyleLinkTypeAttributes: true,
-                keepClosingSlash: true,
-                minifyJS: true,
-                minifyCSS: true,
-                minifyURLs: true
-            },
-             path:config.build.staticPath,
+            // minify: {
+            //     removeComments: true,
+            //     collapseWhitespace: true,
+            //     removeRedundantAttributes: true,
+            //     useShortDoctype: true,
+            //     removeEmptyAttributes: true,
+            //     removeStyleLinkTypeAttributes: true,
+            //     keepClosingSlash: true,
+            //     minifyJS: true,
+            //     minifyCSS: true,
+            //     minifyURLs: true
+            // },
+            path:config.build.staticPath,
             // necessary to consistently work with multiple chunks via CommonsChunkPlugin
             chunksSortMode: 'dependency'
         }),
