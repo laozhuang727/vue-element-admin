@@ -202,8 +202,10 @@
     methods: {
       fetchData() {
         getArticle().then(response => {
+          debugger
           this.postForm = response.data;
         }).catch(err => {
+          debugger
           this.fetchSuccess = false;
           console.log(err);
         });

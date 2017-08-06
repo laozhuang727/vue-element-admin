@@ -3,6 +3,7 @@ import loginAPI from './login';
 import articleAPI from './article';
 import article_tableAPI from './article_table';
 import remoteSearchAPI from './remoteSearch';
+import chartsApi from './chartsApi';
 
 
 // 登录相关
@@ -20,6 +21,9 @@ Mock.mock(/\/article_table\/p/, 'get', article_tableAPI.getPv);
 
 // // 搜索相关
 Mock.mock(/\/search\/user/, 'get', remoteSearchAPI.searchUser);
+
+// // 图表相关
+Mock.mock(/\/charts\/relationship/, 'get', chartsApi.getRelationshipData);
 
 
 export default Mock;
