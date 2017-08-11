@@ -5,7 +5,7 @@
 <script>
   import echarts from 'echarts';
   import $ from 'jquery'
-  import {getRelationshipData} from 'api/chartsApi';
+  import {getRelationshipData} from 'api/apiCharts';
 
 
   export default {

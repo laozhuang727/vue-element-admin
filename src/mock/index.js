@@ -3,7 +3,8 @@ import loginAPI from './login';
 import articleAPI from './article';
 import article_tableAPI from './article_table';
 import remoteSearchAPI from './remoteSearch';
-import chartsApi from './chartsApi';
+import mockCharts from './mockCharts';
+import mockTrainData from './mockTrainData';
 
 
 // 登录相关
@@ -23,7 +24,9 @@ Mock.mock(/\/article_table\/p/, 'get', article_tableAPI.getPv);
 Mock.mock(/\/search\/user/, 'get', remoteSearchAPI.searchUser);
 
 // // 图表相关
-Mock.mock(/\/charts\/relationship/, 'get', chartsApi.getRelationshipData);
+Mock.mock(/\/charts\/relationship/, 'get', mockCharts.getRelationshipData);
 
+// // 聊天机器人训练数据
+// Mock.mock(/\/api\/trainData\/search_all/, 'get', mockTrainData.getList);
 
 export default Mock;

@@ -149,6 +149,16 @@ export const asyncRouterMap = [
     ]
   },
   {
+    path: '/chatRobot',
+    component: Layout,
+    redirect: 'noredirect',
+    name: '聊天机器人',
+    icon: 'zujian',
+    children: [
+      { path: 'trainData', component: _import('chatRobot/train_data_new'), name: '训练数据管理' },
+    ]
+  },
+  {
     path: '/theme',
     component: Layout,
     redirect: 'noredirect',
